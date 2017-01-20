@@ -37,7 +37,7 @@ node.default['apt-chef'].tap do |apt|
   # modified if an alternative package repository is used and other
   # codenames are present. The packages generally "work" forward
   # compatible. https://docs.chef.io/supported_platforms.html
-  apt['supported_codenames'] = %w(lucid precise trusty)
+  apt['supported_codenames'] = %w(lucid precise trusty xenial)
 
   # A YOLO fallback so we don't fail to install packages, but use at
   # one's own risk. The supported Ubuntu platforms are the LTS release
